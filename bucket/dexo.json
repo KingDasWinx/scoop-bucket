@@ -1,0 +1,26 @@
+{
+  "version": "1.2.0",
+  "description": "A local-first database workbench for PostgreSQL and MySQL in the terminal",
+  "homepage": "https://github.com/KingDasWinx/Dexo",
+  "license": "MIT OR Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/KingDasWinx/Dexo/releases/download/v1.2.0/dexo-x86_64-pc-windows-msvc.zip",
+      "hash": "d8e05a0db8390b8bf6731ab4558b0b066be80a25321e36496c75a25607b27060"
+    }
+  },
+  "bin": "dexo.exe",
+  "checkver": {
+    "github": "https://github.com/KingDasWinx/Dexo"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/KingDasWinx/Dexo/releases/download/v$version/dexo-x86_64-pc-windows-msvc.zip",
+        "hash": {
+          "url": "$url.sha256"
+        }
+      }
+    }
+  }
+}
